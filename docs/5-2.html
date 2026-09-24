@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Урок 5.2. Деплой: приложение в интернете — Vibe Coding без магии</title>
+<meta name="description" content="Урок 5.2. Деплой: приложение в интернете. Модуль 5: Доводка и выпуск.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="assets/favicon.svg?v=2026-09-24" type="image/svg+xml">
+<link rel="stylesheet" href="assets/styles.css?v=2026-09-24">
+</head>
+<body class="page page--lesson" data-current-lesson="5-2">
+<header class="topbar">
+  <div class="topbar__inner">
+    <button class="btn btn--mini rail-toggle" type="button" data-rail-toggle aria-controls="rail" aria-expanded="false">Программа</button>
+    <a class="brand" href="index.html">
+      <img class="brand__pet" src="assets/pixel.svg?v=2026-09-24" alt="" width="26" height="26">
+      <span class="brand__name">Vibe Coding <b>без магии</b></span>
+    </a>
+    <nav class="topnav" aria-label="Разделы сайта">
+      <a href="index.html">О курсе</a>
+      <a href="index.html#karta-modulej">Модули</a>
+      <a href="index.html#marshrut-kursa">Маршрут</a>
+    </nav>
+  </div>
+</header>
+<div class="shell">
+<aside class="rail" id="rail" aria-label="Программа курса">
+  <div class="rail__inner">
+    <div class="rail__win">
+      <div class="winbar">
+        <span class="winbar__pet" aria-hidden="true"></span>
+        <span class="winbar__title">Программа</span>
+        <span class="winbar__meta" data-progress-count>0 / 14</span>
+      </div>
+      <div class="rail__body">
+        <div class="progress progress--big"><div class="progress__fill" data-progress-fill></div></div>
+        <p class="rail__hint" data-progress-hint>Прогресс хранится в этом браузере.</p>
+        <nav class="tree">
+<div class="tree__group" data-module="1">
+      <p class="tree__head"><span class="tree__headnum">Модуль 1</span><span class="tree__headtitle">От идеи к плану</span><span class="tree__headcount" data-module-mark="1">0/3</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="1-1.html" data-lesson="1-1">
+          <span class="tree__code">1.1</span>
+          <span class="tree__name">Идея → ТЗ</span>
+          <span class="tree__mark" data-lesson-mark="1-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="1-2.html" data-lesson="1-2">
+          <span class="tree__code">1.2</span>
+          <span class="tree__name">ТЗ → план задач</span>
+          <span class="tree__mark" data-lesson-mark="1-2" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="1-3.html" data-lesson="1-3">
+          <span class="tree__code">1.3</span>
+          <span class="tree__name">Настройка проекта</span>
+          <span class="tree__mark" data-lesson-mark="1-3" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+<div class="tree__group" data-module="2">
+      <p class="tree__head"><span class="tree__headnum">Модуль 2</span><span class="tree__headtitle">От плана к скелету</span><span class="tree__headcount" data-module-mark="2">0/3</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="2-1.html" data-lesson="2-1">
+          <span class="tree__code">2.1</span>
+          <span class="tree__name">Первый экран</span>
+          <span class="tree__mark" data-lesson-mark="2-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="2-2.html" data-lesson="2-2">
+          <span class="tree__code">2.2</span>
+          <span class="tree__name">Данные и сохранение</span>
+          <span class="tree__mark" data-lesson-mark="2-2" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="2-3.html" data-lesson="2-3">
+          <span class="tree__code">2.3</span>
+          <span class="tree__name">Время и эмоции</span>
+          <span class="tree__mark" data-lesson-mark="2-3" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+<div class="tree__group" data-module="3">
+      <p class="tree__head"><span class="tree__headnum">Модуль 3</span><span class="tree__headtitle">Отладка без рулетки</span><span class="tree__headcount" data-module-mark="3">0/3</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="3-1.html" data-lesson="3-1">
+          <span class="tree__code">3.1</span>
+          <span class="tree__name">Читаем ошибки</span>
+          <span class="tree__mark" data-lesson-mark="3-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="3-2.html" data-lesson="3-2">
+          <span class="tree__code">3.2</span>
+          <span class="tree__name">Изоляция проблемы</span>
+          <span class="tree__mark" data-lesson-mark="3-2" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="3-3.html" data-lesson="3-3">
+          <span class="tree__code">3.3</span>
+          <span class="tree__name">Объяснение кода</span>
+          <span class="tree__mark" data-lesson-mark="3-3" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+<div class="tree__group" data-module="4">
+      <p class="tree__head"><span class="tree__headnum">Модуль 4</span><span class="tree__headtitle">Страховка</span><span class="tree__headcount" data-module-mark="4">0/2</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="4-1.html" data-lesson="4-1">
+          <span class="tree__code">4.1</span>
+          <span class="tree__name">Тесты</span>
+          <span class="tree__mark" data-lesson-mark="4-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="4-2.html" data-lesson="4-2">
+          <span class="tree__code">4.2</span>
+          <span class="tree__name">Правки без страха</span>
+          <span class="tree__mark" data-lesson-mark="4-2" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+<div class="tree__group" data-module="5">
+      <p class="tree__head"><span class="tree__headnum">Модуль 5</span><span class="tree__headtitle">Доводка и выпуск</span><span class="tree__headcount" data-module-mark="5">0/3</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="5-1.html" data-lesson="5-1">
+          <span class="tree__code">5.1</span>
+          <span class="tree__name">Полировка</span>
+          <span class="tree__mark" data-lesson-mark="5-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link is-active" href="5-2.html" data-lesson="5-2" aria-current="page">
+          <span class="tree__code">5.2</span>
+          <span class="tree__name">Деплой</span>
+          <span class="tree__mark" data-lesson-mark="5-2" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="5-3.html" data-lesson="5-3">
+          <span class="tree__code">5.3</span>
+          <span class="tree__name">Шпаргалка</span>
+          <span class="tree__mark" data-lesson-mark="5-3" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+        </nav>
+        <button class="btn btn--mini btn--wide" type="button" data-reset>Сбросить прогресс</button>
+      </div>
+    </div>
+  </div>
+</aside>
+<main class="content" id="content">
+<article class="lesson" data-lesson="5-2" data-checks="7">
+  <div class="lesson__win">
+    <div class="winbar winbar--lesson">
+      <span class="winbar__pet" aria-hidden="true"></span>
+      <span class="winbar__title">Урок 5.2. Деплой: приложение в интернете</span>
+      <span class="winbar__meta">6 мин чтения</span>
+    </div>
+    <div class="lesson__head">
+      <p class="lesson__crumb"><a href="index.html#karta-modulej">Программа</a> <span aria-hidden="true">›</span> Модуль 5. Доводка и выпуск</p>
+      <h1 class="lesson__title">Деплой: приложение в интернете</h1>
+      <p class="lesson__stamp" data-lesson-stamp hidden></p>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Содержание урока">
+      <a class="toc__link" href="#zachem-eto-nuzhno" title="Зачем это нужно"><span class="toc__badge" aria-hidden="true">?</span><span class="toc__label">Зачем это нужно</span></a>
+      <a class="toc__link" href="#chto-my-delaem" title="Что мы делаем"><span class="toc__badge" aria-hidden="true">»</span><span class="toc__label">Что мы делаем</span></a>
+      <a class="toc__link" href="#shag-1" title="Шаг 1. Приведите репозиторий в порядок"><span class="toc__badge" aria-hidden="true">1</span><span class="toc__label">Шаг 1</span></a>
+      <a class="toc__link" href="#shag-2" title="Шаг 2. Опубликуйте код на GitHub"><span class="toc__badge" aria-hidden="true">2</span><span class="toc__label">Шаг 2</span></a>
+      <a class="toc__link" href="#shag-3" title="Шаг 3. Получите план и выполняйте по шагам"><span class="toc__badge" aria-hidden="true">3</span><span class="toc__label">Шаг 3</span></a>
+      <a class="toc__link" href="#shag-4" title="Шаг 4. Проверьте результат с другого устройства"><span class="toc__badge" aria-hidden="true">4</span><span class="toc__label">Шаг 4</span></a>
+      <a class="toc__link" href="#prompt" title="Prompt"><span class="toc__badge" aria-hidden="true">&gt;</span><span class="toc__label">Prompt</span></a>
+      <a class="toc__link" href="#chto-mozhet-pojti-ne-tak" title="Что может пойти не так"><span class="toc__badge" aria-hidden="true">!</span><span class="toc__label">Что может пойти не так</span></a>
+      <a class="toc__link" href="#kak-proverit-rezultat" title="Как проверить результат"><span class="toc__badge" aria-hidden="true">✓</span><span class="toc__label">Как проверить результат</span></a>
+      <a class="toc__link" href="#praktika" title="Практика"><span class="toc__badge" aria-hidden="true">&#9998;</span><span class="toc__label">Практика</span></a>
+      <a class="toc__link" href="#glavnoe" title="Главное"><span class="toc__badge" aria-hidden="true">★</span><span class="toc__label">Главное</span></a>
+    </nav>
+
+  <div class="lesson__sections">
+    <section class="panel panel--why" id="zachem-eto-nuzhno" data-section="why">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">?</span>
+        <h2 class="panel__title">Зачем это нужно</h2>
+        <a class="panel__anchor" href="#zachem-eto-nuzhno" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Приложение в локальной папке — черновик: его видите только вы. Публикация меняет статус результата: ссылку можно отправить другу или открыть с телефона. Деплой — первое место, где агент встречается с внешним миром (платформа, чей интерфейс меняется), и потому первое место, где он массово выдумывает несуществующие кнопки и шаги. Второе звено публикации — репозиторий на GitHub: без него площадка не увидит ваш код.</p>
+</div>
+</section>
+<section class="panel panel--what" id="chto-my-delaem" data-section="what">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">»</span>
+        <h2 class="panel__title">Что мы делаем</h2>
+        <a class="panel__anchor" href="#chto-my-delaem" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Публикуем «Пиксель» на Vercel бесплатно: выкладываем код в репозиторий на GitHub → подключаем Vercel к репозиторию → деплой → проверка с телефона. Всё в режиме «сначала план»: агент предлагает шаги, вы выполняете и подтверждаете.</p>
+</div>
+</section>
+<section class="panel panel--step" id="shag-1" data-section="step">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">1</span>
+        <h2 class="panel__title">Шаг 1. Приведите репозиторий в порядок</h2>
+        <a class="panel__anchor" href="#shag-1" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Проверьте: все изменения закоммичены, <code>git status</code> чист, секретов в коде нет (у «Пикселя» их и не должно быть — это важный чек перед публикацией). Помните: код станет публичным, и во фронтенде всё, что попало в сборку, увидят все — правило «положить ключ в переменные окружения» тут не спасает; настоящие секреты живут только на сервере.</p>
+</div>
+</section>
+<section class="panel panel--step" id="shag-2" data-section="step">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">2</span>
+        <h2 class="panel__title">Шаг 2. Опубликуйте код на GitHub</h2>
+        <a class="panel__anchor" href="#shag-2" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Заведите бесплатный аккаунт на GitHub (если ещё нет) и создайте пустой репозиторий <code>pixel-pet</code> — без README и .gitignore, они у вас уже есть. GitHub покажет адрес репозитория. Команды выполняете вы; агент может показать план и объяснить каждую:</p>
+<div class="term" data-kind="step">
+  <div class="term__bar"><span class="term__label">команды терминала</span><button class="btn btn--mini" type="button" data-copy>Скопировать</button></div>
+  <pre class="term__pre code"><code>git remote add origin https://github.com/&lt;ваш-логин&gt;/pixel-pet.git
+git branch -M main
+git push -u origin main</code></pre>
+</div><p><code>git branch -M main</code> переименовывает вашу ветку в <code>main</code> — так называется ветка по умолчанию на GitHub (у вашего git настройки могут отличаться: если команда не сработает, посмотрите <code>git branch</code> и используйте своё имя). GitHub показывает два адреса репозитория — HTTPS (<code>https://github.com/...</code>) и SSH (<code>git@github.com:...</code>); в команде выше используется HTTPS, копируйте именно его.</p>
+<p><strong>Первый <code>push</code> спросит доступ.</strong> Пароль от аккаунта GitHub не подойдёт: git откроет окно Git Credential Manager (вход через браузер) или попросит логин и <strong>токен</strong> вместо пароля. Если окна нет, а терминал спрашивает пароль — поставьте GitHub CLI и войдите командой <code>gh auth login</code> либо создайте токен (GitHub → Settings → Developer settings → Personal access tokens) с правом на работу с репозиториями. Токен — секрет: не вставляйте его в чат агенту и не сохраняйте в файлах проекта.</p>
+<p>После <code>push</code> обновите страницу репозитория — код на месте.</p>
+</div>
+</section>
+<section class="panel panel--step" id="shag-3" data-section="step">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">3</span>
+        <h2 class="panel__title">Шаг 3. Получите план и выполняйте по шагам</h2>
+        <a class="panel__anchor" href="#shag-3" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Промпт ниже в режиме «ничего не выполняй, только план». План агента сверяйте с реальным экраном Vercel: интерфейс платформы меняется, и это нормально, что агент отстаёт. Где план расходится с реальностью — опишите агенту расхождение словами («на экране нет кнопки X, есть Y») и попросите скорректировать план, а не «сделай сам».</p>
+<p>Обычно настраивать ничего не нужно: Vercel сам определяет, что это Vite, и подставляет команду сборки и папку результата. Оставьте предложенные значения — на первом деплое менять их руками не надо.</p>
+</div>
+</section>
+<section class="panel panel--step" id="shag-4" data-section="step">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">4</span>
+        <h2 class="panel__title">Шаг 4. Проверьте результат с другого устройства</h2>
+        <a class="panel__anchor" href="#shag-4" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Откройте приложение по ссылке с телефона. Покликайте, перезагрузите, проверьте, что состояние сохраняется. Учтите: на телефоне у питомца своя копия данных — он будет в стартовом состоянии, и то, что вы кормили его на компьютере, не перенесётся. Это не баг: <code>localStorage</code> живёт в конкретном браузере на конкретном устройстве. Затем сделайте маленькое изменение (поменяйте текст), закоммитьте и <strong>отправьте</strong> (<code>git push</code>) — убедитесь, что оно доехало до опубликованной версии. Это цикл обновления, который вам предстоит повторять.</p>
+</div>
+</section>
+<section class="panel panel--prompt" id="prompt" data-section="prompt">
+  <div class="winbar winbar--panel">
+        <span class="winbar__pet" aria-hidden="true"></span>
+        <span class="winbar__title">Промпт для агента</span>
+        <button class="btn btn--mini" type="button" data-copy>Скопировать</button>
+      </div>
+  <div class="panel__body"><pre class="code"><code>Я хочу бесплатно опубликовать это приложение (React + Vite)
+на Vercel. Сначала составь план, ничего не выполняй:
+
+1) что должно быть в git-репозитории перед деплоем;
+2) как подключить мой репозиторий на GitHub к Vercel;
+3) точный порядок действий с моей стороны;
+4) типичные ошибки и как их заметить;
+5) что в коде не должно попасть в публичный репозиторий.
+
+Если в каком-то шаге не уверен (интерфейс Vercel мог
+измениться) — так и скажи и укажи, где найти актуальную
+инструкцию.
+
+Дождись моего подтверждения плана.</code></pre></div>
+</section>
+<section class="panel panel--risks" id="chto-mozhet-pojti-ne-tak" data-section="risks">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">!</span>
+        <h2 class="panel__title">Что может пойти не так</h2>
+        <a class="panel__anchor" href="#chto-mozhet-pojti-ne-tak" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><ol>
+<li><strong>Выдуманные шаги платформы.</strong> Агент описывает кнопки и пункты меню, которых нет на экране, — потому что его знания об интерфейсе Vercel устарели, а проверить их он не может. Не выполняйте шаг, которого не видите. «На моём экране нет этой кнопки» — законный и правильный ответ агенту.</li>
+<li><strong>Секреты в коде.</strong> Репозиторий и ссылка публичны: всё, что попало в сборку, увидят все. Агент может пропустить ключ в конфиге или в истории коммитов — и уверенно ответить «ключей нет». Почему: модель не чувствует границу «публичное/приватное», пока её не назвать, а слово агента — не аудит. Проверьте сами: поиск по проекту (<code>key</code>, <code>secret</code>, <code>token</code>), файлы <code>.env*</code>, при необходимости <code>git log</code>. В этом уроке ключей нет — правило для будущих проектов; и помните, что во фронтенде <code>VITE_</code>-переменные тоже попадают в публичную сборку.</li>
+<li><strong>Push падает из-за имени ветки.</strong> Ошибка вида <code>src refspec main does not match any</code> означает, что ваша локальная ветка называется иначе (<code>master</code>). Не угадывайте: посмотрите <code>git branch</code>, переименуйте (<code>git branch -M main</code>) и повторите <code>git push</code>.</li>
+<li><strong><code>remote origin already exists</code>.</strong> У проекта уже есть удалённый репозиторий — от шаблона или от предыдущей попытки. Посмотрите <code>git remote -v</code>; чтобы заменить адрес на свой, выполните <code>git remote set-url origin https://github.com/&lt;ваш-логин&gt;/pixel-pet.git</code> и повторите <code>push</code>.</li>
+</ol>
+</div>
+</section>
+<section class="panel panel--check" id="kak-proverit-rezultat" data-section="check">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">✓</span>
+        <h2 class="panel__title">Как проверить результат</h2>
+        <a class="panel__anchor" href="#kak-proverit-rezultat" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><ul>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="5-2.1e3o1tm"><span class="check__box" aria-hidden="true"></span><span class="check__text"><code>git status</code> чист, все изменения закоммичены.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="5-2.14msiiw"><span class="check__box" aria-hidden="true"></span><span class="check__text">Код отправлен на GitHub (<code>git push</code> прошёл, репозиторий виден в браузере).</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="5-2.wbjju9"><span class="check__box" aria-hidden="true"></span><span class="check__text">Вы видели и подтвердили план до его выполнения.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="5-2.dayevv"><span class="check__box" aria-hidden="true"></span><span class="check__text">Приложение открывается по публичной ссылке.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="5-2.1bpw7ry"><span class="check__box" aria-hidden="true"></span><span class="check__text">Проверка с телефона: клики работают, состояние сохраняется.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="5-2.fs1bjz"><span class="check__box" aria-hidden="true"></span><span class="check__text">Новое изменение, отправленное через <code>git push</code>, доехало до опубликованной версии.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="5-2.a47pul"><span class="check__box" aria-hidden="true"></span><span class="check__text">В публичном коде нет ключей и паролей; токен доступа не отправлялся агенту в чат и не сохранён в проекте.</span></label></li>
+</ul>
+</div>
+</section>
+<section class="panel panel--practice" id="praktika" data-section="practice">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">&#9998;</span>
+        <h2 class="panel__title">Практика</h2>
+        <a class="panel__anchor" href="#praktika" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Разверните приложение ещё раз — на Netlify или GitHub Pages. Задание без готового решения: цель не вторая площадка, а доказательство, что вы проходите процесс без подсказок курса, с агентом в режиме «план → подтверждение → проверка». Учтите: GitHub Pages потребует дополнительных настроек сборки — план можно спросить у агента, а сверку плана с реальностью делать как в этом уроке. Критерий: ссылка работает, и вы можете объяснить, чем путь отличается от Vercel.</p>
+</div>
+</section>
+<section class="panel panel--summary" id="glavnoe" data-section="summary">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">★</span>
+        <h2 class="panel__title">Главное</h2>
+        <a class="panel__anchor" href="#glavnoe" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><ol>
+<li>Деплой превращает черновик в результат, которым можно поделиться.</li>
+<li>Публикация — это два звена: репозиторий на GitHub и площадка (Vercel); пропущенное звено видно сразу.</li>
+<li>Интерфейс платформ меняется быстрее знаний агента — сверяйте с экраном.</li>
+<li>Шаг, которого не видите, не выполняйте — даже если агент уверен.</li>
+<li>Секреты и публичность — зона вашей личной проверки, а не слово агента.</li>
+<li>Цикл «коммит → push → обновление» — теперь часть вашей рутины.</li>
+</ol>
+</div>
+</section>
+  </div>
+
+  <nav class="pager" aria-label="Навигация по урокам">
+    <a class="pager__cell" href="5-1.html">
+      <span class="pager__dir">← Предыдущий урок</span>
+      <span class="pager__title"><b>5.1</b> Полировка</span>
+    </a>
+    <a class="pager__cell pager__cell--next" href="5-3.html">
+      <span class="pager__dir">Следующий урок →</span>
+      <span class="pager__title"><b>5.3</b> Шпаргалка</span>
+    </a>
+  </nav>
+</article>
+</main>
+</div>
+<footer class="statusbar">
+  <p class="statusbar__cell statusbar__cell--hide-sm">14 уроков · 5 модулей</p>
+  <p class="statusbar__cell statusbar__cell--grow" data-status role="status">Готово</p>
+  <p class="statusbar__cell">Пройдено: <b data-progress-total>0 из 14</b></p>
+  <p class="statusbar__cell statusbar__cell--hide-sm" data-clock>--:--</p>
+</footer>
+<script type="application/json" id="course-data">{"version":1,"total":14,"start":"1-1","lessons":[{"slug":"1-1","code":"1.1","short":"Идея → ТЗ","module":1,"checks":5},{"slug":"1-2","code":"1.2","short":"ТЗ → план задач","module":1,"checks":6},{"slug":"1-3","code":"1.3","short":"Настройка проекта","module":1,"checks":8},{"slug":"2-1","code":"2.1","short":"Первый экран","module":2,"checks":6},{"slug":"2-2","code":"2.2","short":"Данные и сохранение","module":2,"checks":6},{"slug":"2-3","code":"2.3","short":"Время и эмоции","module":2,"checks":7},{"slug":"3-1","code":"3.1","short":"Читаем ошибки","module":3,"checks":5},{"slug":"3-2","code":"3.2","short":"Изоляция проблемы","module":3,"checks":5},{"slug":"3-3","code":"3.3","short":"Объяснение кода","module":3,"checks":5},{"slug":"4-1","code":"4.1","short":"Тесты","module":4,"checks":5},{"slug":"4-2","code":"4.2","short":"Правки без страха","module":4,"checks":5},{"slug":"5-1","code":"5.1","short":"Полировка","module":5,"checks":6},{"slug":"5-2","code":"5.2","short":"Деплой","module":5,"checks":7},{"slug":"5-3","code":"5.3","short":"Шпаргалка","module":5,"checks":5}]}</script>
+<script src="assets/app.js?v=2026-09-24" defer></script>
+</body>
+</html>

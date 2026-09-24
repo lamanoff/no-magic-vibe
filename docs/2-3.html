@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Урок 2.3. Время и эмоции: питомец становится живым — Vibe Coding без магии</title>
+<meta name="description" content="Урок 2.3. Время и эмоции: питомец становится живым. Модуль 2: От плана к скелету.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="assets/favicon.svg?v=2026-09-24" type="image/svg+xml">
+<link rel="stylesheet" href="assets/styles.css?v=2026-09-24">
+</head>
+<body class="page page--lesson" data-current-lesson="2-3">
+<header class="topbar">
+  <div class="topbar__inner">
+    <button class="btn btn--mini rail-toggle" type="button" data-rail-toggle aria-controls="rail" aria-expanded="false">Программа</button>
+    <a class="brand" href="index.html">
+      <img class="brand__pet" src="assets/pixel.svg?v=2026-09-24" alt="" width="26" height="26">
+      <span class="brand__name">Vibe Coding <b>без магии</b></span>
+    </a>
+    <nav class="topnav" aria-label="Разделы сайта">
+      <a href="index.html">О курсе</a>
+      <a href="index.html#karta-modulej">Модули</a>
+      <a href="index.html#marshrut-kursa">Маршрут</a>
+    </nav>
+  </div>
+</header>
+<div class="shell">
+<aside class="rail" id="rail" aria-label="Программа курса">
+  <div class="rail__inner">
+    <div class="rail__win">
+      <div class="winbar">
+        <span class="winbar__pet" aria-hidden="true"></span>
+        <span class="winbar__title">Программа</span>
+        <span class="winbar__meta" data-progress-count>0 / 14</span>
+      </div>
+      <div class="rail__body">
+        <div class="progress progress--big"><div class="progress__fill" data-progress-fill></div></div>
+        <p class="rail__hint" data-progress-hint>Прогресс хранится в этом браузере.</p>
+        <nav class="tree">
+<div class="tree__group" data-module="1">
+      <p class="tree__head"><span class="tree__headnum">Модуль 1</span><span class="tree__headtitle">От идеи к плану</span><span class="tree__headcount" data-module-mark="1">0/3</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="1-1.html" data-lesson="1-1">
+          <span class="tree__code">1.1</span>
+          <span class="tree__name">Идея → ТЗ</span>
+          <span class="tree__mark" data-lesson-mark="1-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="1-2.html" data-lesson="1-2">
+          <span class="tree__code">1.2</span>
+          <span class="tree__name">ТЗ → план задач</span>
+          <span class="tree__mark" data-lesson-mark="1-2" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="1-3.html" data-lesson="1-3">
+          <span class="tree__code">1.3</span>
+          <span class="tree__name">Настройка проекта</span>
+          <span class="tree__mark" data-lesson-mark="1-3" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+<div class="tree__group" data-module="2">
+      <p class="tree__head"><span class="tree__headnum">Модуль 2</span><span class="tree__headtitle">От плана к скелету</span><span class="tree__headcount" data-module-mark="2">0/3</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="2-1.html" data-lesson="2-1">
+          <span class="tree__code">2.1</span>
+          <span class="tree__name">Первый экран</span>
+          <span class="tree__mark" data-lesson-mark="2-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="2-2.html" data-lesson="2-2">
+          <span class="tree__code">2.2</span>
+          <span class="tree__name">Данные и сохранение</span>
+          <span class="tree__mark" data-lesson-mark="2-2" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link is-active" href="2-3.html" data-lesson="2-3" aria-current="page">
+          <span class="tree__code">2.3</span>
+          <span class="tree__name">Время и эмоции</span>
+          <span class="tree__mark" data-lesson-mark="2-3" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+<div class="tree__group" data-module="3">
+      <p class="tree__head"><span class="tree__headnum">Модуль 3</span><span class="tree__headtitle">Отладка без рулетки</span><span class="tree__headcount" data-module-mark="3">0/3</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="3-1.html" data-lesson="3-1">
+          <span class="tree__code">3.1</span>
+          <span class="tree__name">Читаем ошибки</span>
+          <span class="tree__mark" data-lesson-mark="3-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="3-2.html" data-lesson="3-2">
+          <span class="tree__code">3.2</span>
+          <span class="tree__name">Изоляция проблемы</span>
+          <span class="tree__mark" data-lesson-mark="3-2" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="3-3.html" data-lesson="3-3">
+          <span class="tree__code">3.3</span>
+          <span class="tree__name">Объяснение кода</span>
+          <span class="tree__mark" data-lesson-mark="3-3" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+<div class="tree__group" data-module="4">
+      <p class="tree__head"><span class="tree__headnum">Модуль 4</span><span class="tree__headtitle">Страховка</span><span class="tree__headcount" data-module-mark="4">0/2</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="4-1.html" data-lesson="4-1">
+          <span class="tree__code">4.1</span>
+          <span class="tree__name">Тесты</span>
+          <span class="tree__mark" data-lesson-mark="4-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="4-2.html" data-lesson="4-2">
+          <span class="tree__code">4.2</span>
+          <span class="tree__name">Правки без страха</span>
+          <span class="tree__mark" data-lesson-mark="4-2" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+<div class="tree__group" data-module="5">
+      <p class="tree__head"><span class="tree__headnum">Модуль 5</span><span class="tree__headtitle">Доводка и выпуск</span><span class="tree__headcount" data-module-mark="5">0/3</span></p>
+      <ul class="tree__list">
+<li><a class="tree__link" href="5-1.html" data-lesson="5-1">
+          <span class="tree__code">5.1</span>
+          <span class="tree__name">Полировка</span>
+          <span class="tree__mark" data-lesson-mark="5-1" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="5-2.html" data-lesson="5-2">
+          <span class="tree__code">5.2</span>
+          <span class="tree__name">Деплой</span>
+          <span class="tree__mark" data-lesson-mark="5-2" aria-hidden="true"></span>
+        </a></li>
+<li><a class="tree__link" href="5-3.html" data-lesson="5-3">
+          <span class="tree__code">5.3</span>
+          <span class="tree__name">Шпаргалка</span>
+          <span class="tree__mark" data-lesson-mark="5-3" aria-hidden="true"></span>
+        </a></li>
+      </ul>
+    </div>
+        </nav>
+        <button class="btn btn--mini btn--wide" type="button" data-reset>Сбросить прогресс</button>
+      </div>
+    </div>
+  </div>
+</aside>
+<main class="content" id="content">
+<article class="lesson" data-lesson="2-3" data-checks="7">
+  <div class="lesson__win">
+    <div class="winbar winbar--lesson">
+      <span class="winbar__pet" aria-hidden="true"></span>
+      <span class="winbar__title">Урок 2.3. Время и эмоции: питомец становится живым</span>
+      <span class="winbar__meta">10 мин чтения</span>
+    </div>
+    <div class="lesson__head">
+      <p class="lesson__crumb"><a href="index.html#karta-modulej">Программа</a> <span aria-hidden="true">›</span> Модуль 2. От плана к скелету</p>
+      <h1 class="lesson__title">Время и эмоции: питомец становится живым</h1>
+      <p class="lesson__stamp" data-lesson-stamp hidden></p>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Содержание урока">
+      <a class="toc__link" href="#zachem-eto-nuzhno" title="Зачем это нужно"><span class="toc__badge" aria-hidden="true">?</span><span class="toc__label">Зачем это нужно</span></a>
+      <a class="toc__link" href="#chto-my-delaem" title="Что мы делаем"><span class="toc__badge" aria-hidden="true">»</span><span class="toc__label">Что мы делаем</span></a>
+      <a class="toc__link" href="#shag-1" title="Шаг 1. Сформулируйте поведение и способы проверки"><span class="toc__badge" aria-hidden="true">1</span><span class="toc__label">Шаг 1</span></a>
+      <a class="toc__link" href="#shag-2" title="Шаг 2. Отправьте промпт и посмотрите diff"><span class="toc__badge" aria-hidden="true">2</span><span class="toc__label">Шаг 2</span></a>
+      <a class="toc__link" href="#shag-3" title="Шаг 3. Проверьте поведение руками"><span class="toc__badge" aria-hidden="true">3</span><span class="toc__label">Шаг 3</span></a>
+      <a class="toc__link" href="#prompt" title="Prompt"><span class="toc__badge" aria-hidden="true">&gt;</span><span class="toc__label">Prompt</span></a>
+      <a class="toc__link" href="#chto-mozhet-pojti-ne-tak" title="Что может пойти не так"><span class="toc__badge" aria-hidden="true">!</span><span class="toc__label">Что может пойти не так</span></a>
+      <a class="toc__link" href="#kak-proverit-rezultat" title="Как проверить результат"><span class="toc__badge" aria-hidden="true">✓</span><span class="toc__label">Как проверить результат</span></a>
+      <a class="toc__link" href="#praktika" title="Практика"><span class="toc__badge" aria-hidden="true">&#9998;</span><span class="toc__label">Практика</span></a>
+      <a class="toc__link" href="#glavnoe" title="Главное"><span class="toc__badge" aria-hidden="true">★</span><span class="toc__label">Главное</span></a>
+    </nav>
+
+  <div class="lesson__sections">
+    <section class="panel panel--why" id="zachem-eto-nuzhno" data-section="why">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">?</span>
+        <h2 class="panel__title">Зачем это нужно</h2>
+        <a class="panel__anchor" href="#zachem-eto-nuzhno" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Сейчас «Пиксель» живёт по кликам: кормите — растёт, играете — растёт. Между кликами не происходит ничего — и это сразу выдаёт демо: питомец, который меняется только от кнопок, это счётчик, а не питомец. Настоящий теряет силы сам. Спад показателей — первая функция, которая работает без пользователя, и первый таймер в проекте. Таймеры — классическое место багов «работает, но не так»: таймеров оказалось два — и спад идёт вдвое быстрее; спад тикает только пока вкладка открыта; эмодзи «залип» и не меняется. Поэтому этот урок — тот же цикл «задача → diff → проверка», но на самой коварной задаче проекта.</p>
+</div>
+</section>
+<section class="panel panel--what" id="chto-my-delaem" data-section="what">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">»</span>
+        <h2 class="panel__title">Что мы делаем</h2>
+        <a class="panel__anchor" href="#chto-my-delaem" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Три связанные вещи:</p>
+<ol>
+<li><strong>Границы.</strong> Сытость и настроение живут в диапазоне 0–100: десять кормёжек подряд не дают 150, а бесконечный простой не уводит в минус.</li>
+<li><strong>Спад.</strong> Каждую минуту обе шкалы уменьшаются на 1. Причём честно: если вкладку закрывали на 10 минут, при открытии спад начислится и за это время.</li>
+<li><strong>Эмоции.</strong> Эмодзи питомца отражает состояние: 😿 — если любая шкала ниже 20, 😸 — если обе выше 80, 🙂 — в остальных случаях.</li>
+</ol>
+<figure class="fig fig--flow"><ol class="flow">
+      <li class="flow__item flow__item--node"><span class="flow__box">Состояние: сытость, настроение, время последнего обновления</span></li>
+      <li class="flow__item flow__item--decision">
+        <span class="flow__box flow__box--ask">Прошло время?</span>
+        <ul class="flow__branches">
+        <li class="flow__branch">
+          <span class="flow__edge">Вкладка открыта: раз в минуту</span>
+          <ol class="flow flow--sub">
+      <li class="flow__item flow__item--node"><span class="flow__box">Обе шкалы: −1</span></li>
+    </ol>
+        </li>
+        <li class="flow__branch">
+          <span class="flow__edge">Вкладку открыли после паузы</span>
+          <ol class="flow flow--sub">
+      <li class="flow__item flow__item--node"><span class="flow__box">Обе шкалы: −1 за каждую минуту паузы</span></li>
+    </ol>
+        </li>
+        </ul>
+      </li>
+      <li class="flow__item flow__item--node"><span class="flow__box">Ограничение 0–100</span></li>
+      <li class="flow__item flow__item--decision">
+        <span class="flow__box flow__box--ask">Пороги эмоции</span>
+        <ul class="flow__branches">
+        <li class="flow__branch">
+          <span class="flow__edge">любая шкала ниже 20</span>
+          <ol class="flow flow--sub">
+      <li class="flow__item flow__item--node"><span class="flow__box">😿 грустный</span></li>
+    </ol>
+        </li>
+        <li class="flow__branch">
+          <span class="flow__edge">обе шкалы выше 80</span>
+          <ol class="flow flow--sub">
+      <li class="flow__item flow__item--node"><span class="flow__box">😸 счастливый</span></li>
+    </ol>
+        </li>
+        <li class="flow__branch">
+          <span class="flow__edge">иначе</span>
+          <ol class="flow flow--sub">
+      <li class="flow__item flow__item--node"><span class="flow__box">🙂 обычный</span></li>
+    </ol>
+        </li>
+        </ul>
+      </li>
+    </ol></figure><p>В курсе это третья задача плана (если ваша нумерация другая — важна суть). Как всегда: без новых библиотек, весь код — в <code>App.jsx</code> и <code>App.css</code>.</p>
+</div>
+</section>
+<section class="panel panel--step" id="shag-1" data-section="step">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">1</span>
+        <h2 class="panel__title">Шаг 1. Сформулируйте поведение и способы проверки</h2>
+        <a class="panel__anchor" href="#shag-1" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>До промпта сверьтесь: как вы это проверите? Ниже — готовые способы; если видите другой путь, допишите свой.</p>
+<ul>
+<li><strong>Границы:</strong> кликаю «покормить» десять раз — сытость останавливается на 100, не ползёт дальше.</li>
+<li><strong>Спад на глазах:</strong> записываю значения, оставляю вкладку открытой на 3–4 минуты — обе шкалы уменьшились примерно на 3–4.</li>
+<li><strong>Спад в «офлайне»:</strong> записываю значения, закрываю вкладку, открываю через 5 минут — значения уменьшились примерно на 5.</li>
+<li><strong>Эмоция:</strong> довожу сытость до 15 — эмодзи сменился на грустный; поднимаю обе шкалы выше 80 — на счастливый.</li>
+</ul>
+<p>Если проверки не сформулированы — вы не отличите «работает» от «работает наполовину». А это как раз то, как выглядит главный баг этого урока: спад, который тикает не так, как ожидалось.</p>
+</div>
+</section>
+<section class="panel panel--step" id="shag-2" data-section="step">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">2</span>
+        <h2 class="panel__title">Шаг 2. Отправьте промпт и посмотрите diff</h2>
+        <a class="panel__anchor" href="#shag-2" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Промпт ниже. Обратите внимание на непривычные требования: «таймер — один», «посчитать время отсутствия», «тесты не добавлять». Первое — защита от классического бага с двумя интервалами, второе — то, что отличает честный спад от «тикает, пока открыто», третье — потому что тесты у нас будут в модуле 4, не раньше.</p>
+<p>После правок посмотрите diff: не появились ли новые компоненты, анимации или библиотеки, которых вы не просили. Заодно проверьте, что не появилось новых файлов: весь код этого урока — в <code>App.jsx</code> и <code>App.css</code>.</p>
+</div>
+</section>
+<section class="panel panel--step" id="shag-3" data-section="step">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">3</span>
+        <h2 class="panel__title">Шаг 3. Проверьте поведение руками</h2>
+        <a class="panel__anchor" href="#shag-3" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Чувствительное место — время и значения в хранилище. Прежде чем проверять, <strong>очистите сохранённое состояние</strong>: F12 → Application → Local Storage → адрес приложения → правый клик по строке с состоянием питомца → Delete (или кнопка Clear). Иначе в хранилище лежат данные из урока 2.2, в которых нет отметки времени, — и первый же запуск может дать <code>NaN</code> или резкое падение шкал не из-за бага, а из-за старых данных.</p>
+<h3>Как менять значения и отметку времени руками</h3>
+<p>Это ваш основной инструмент в этом уроке: большинство проверок требует быстро понизить шкалу, а спад идёт всего −1 в минуту, то есть ждать пришлось бы час.</p>
+<ol>
+<li>F12 → вкладка <strong>Application</strong> → раздел <strong>Local Storage</strong> → адрес приложения (<code>http://localhost:5173</code>).</li>
+<li>В списке ключей найдите состояние питомца. Имя ключа выбирал агент (в 2.2 вы его записали); значение — <strong>одна строка JSON</strong>, например <code>{&quot;satiety&quot;:78,&quot;mood&quot;:70,&quot;lastUpdate&quot;:1758...}</code>.</li>
+<li>Двойной клик по значению открывает его для правки. Меняйте осторожно: лишняя кавычка или запятая ломают JSON.</li>
+<li><strong>Сначала запишите исходное значение</strong> (скопируйте в блокнот) — чтобы вернуть, если что-то испортится.</li>
+<li><strong>Отметка времени</strong> (может называться <code>lastUpdate</code>, <code>updatedAt</code>, <code>timestamp</code>) обычно хранится числом — миллисекунды от 1 января 1970 года. 10 минут — это 600000, час — 3600000. Чтобы сымитировать паузу, <strong>вычтите</strong> из отметки нужное число и перезагрузите страницу: приложение посчитает, что прошло больше времени, и спишет спад за эти минуты. Отметка должна стать <strong>старше</strong> текущего времени, но не позже — иначе спад пойдёт «в минус» или получится странный результат. Если вместо числа у вас читаемая дата — вычитайте минуты из неё.</li>
+<li>Приложение считает так: при загрузке оно сравнивает сохранённое время с текущим и начисляет спад за разницу. Именно поэтому правка отметки и есть проверка «офлайна».</li>
+<li>Если после правки приложение сломалось или показывает странности — нажмите <strong>Clear</strong> (или удалите ключ), перезагрузите страницу и начните заново. Это не поломка проекта: состояние — не код, его всегда можно создать заново.</li>
+</ol>
+<p>Не хотите возиться с DevTools — работает и честное ожидание: закройте вкладку на 5 минут и откройте снова.</p>
+<h3>Проверки</h3>
+<ol>
+<li><strong>«Офлайн»:</strong> запишите значения, уменьшите отметку времени на 600000 (10 минут), перезагрузите — значения должны упасть примерно на 10.</li>
+<li><strong>Спад на глазах:</strong> оставьте вкладку <strong>активной</strong> на 3–4 минуты, не переключаясь на другие вкладки и не закрывая крышку ноутбука (браузер тормозит таймеры в фоновых вкладках, и падение будет меньше ожидаемого — это не баг агента). Падение должно быть ≈1 в минуту. Если вдвое-втрое быстрее — у агента «двойной таймер» (частая ошибка React). Если спад пропал совсем — тоже смотрите на таймер: при починке двойного его легко убить целиком.</li>
+<li><strong>Эмоция через пороги туда-обратно:</strong> занизьте сытость ниже 20 в хранилище (и перезагрузите) → грустный; откормите кнопками так, чтобы обе шкалы были выше 80 → счастливый; затем понизьте одну — снова обычный. Если эмодзи «залип» — эмоция вычисляется один раз при загрузке, а не при каждом изменении.</li>
+<li><strong>Границы с двух сторон:</strong> сверху — сто́п на 100; снизу — поставьте шкале значение 1–2 и подождите минуту (или вычтите из отметки времени больше минут) — ниже 0 значение не уходит.</li>
+</ol>
+<p>Нашли несоответствие — это данные для агента: описываете «что делал → что увидел → что ожидал» и просите одну правку. После проверок закоммитьте рабочую версию:</p>
+<div class="term" data-kind="step">
+  <div class="term__bar"><span class="term__label">команды терминала</span><button class="btn btn--mini" type="button" data-copy>Скопировать</button></div>
+  <pre class="term__pre code"><code>git add .
+git commit -m &quot;спад по времени, границы и эмоции&quot;</code></pre>
+</div></div>
+</section>
+<section class="panel panel--prompt" id="prompt" data-section="prompt">
+  <div class="winbar winbar--panel">
+        <span class="winbar__pet" aria-hidden="true"></span>
+        <span class="winbar__title">Промпт для агента</span>
+        <button class="btn btn--mini" type="button" data-copy>Скопировать</button>
+      </div>
+  <div class="panel__body"><pre class="code"><code>Работай в этом проекте (React + Vite + чистый CSS).
+
+Задача: питомец должен меняться сам и показывать эмоцию.
+
+Требования:
+1) сытость и настроение ограничены: не меньше 0 и не больше 100;
+2) раз в минуту обе шкалы уменьшаются на 1;
+3) время последнего обновления храни вместе с состоянием
+в localStorage; когда страницу открывают — посчитай, сколько
+минут прошло, и начисли спад за это время. Если сохранённых
+данных нет или в них нет отметки времени — начни со стартовых
+значений; в шкалах не должно появиться NaN или undefined;
+4) эмоция зависит от шкал: 😿 — любая ниже 20; 😸 — обе выше 80;
+🙂 — в остальных случаях. Эмоция вычисляется из шкал при каждом
+изменении, отдельным полем не хранится;
+5) таймер должен быть один и корректно очищаться. Если в шаблоне
+включён Strict Mode (посмотри main.jsx) — в режиме разработки
+эффекты запускаются дважды: ни спад по таймеру, ни спад,
+начисленный при загрузке за пропущенное время, не должны
+удваиваться;
+6) если у меня есть кнопка сброса состояния — сброс должен
+сбрасывать и отметку времени;
+7) покажи точечные изменения: файл целиком не переписывай,
+новых файлов не создавай, весь код — в App.jsx и App.css;
+8) только то, что в задаче: новых кнопок, анимаций, библиотек
+и тестов не добавляй;
+9) сначала перечисли файлы, которые изменишь, затем внеси
+изменения;
+10) после правок запусти сборку (npm run build) и покажи
+результат — ошибок быть не должно; поведение я проверю сам.</code></pre></div>
+</section>
+<section class="panel panel--risks" id="chto-mozhet-pojti-ne-tak" data-section="risks">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">!</span>
+        <h2 class="panel__title">Что может пойти не так</h2>
+        <a class="panel__anchor" href="#chto-mozhet-pojti-ne-tak" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><ol>
+<li><strong>Двойной таймер.</strong> Спад идёт вдвое быстрее: за 4 минуты упало на 8. Почему: в React легко создать второй интервал, не убрав первый; в режиме разработки Strict Mode специально запускает эффекты дважды, чтобы такие ошибки были видны. Тот же Strict Mode может удвоить и спад, начисленный при загрузке за время отсутствия: если после правки отметки времени значения упали вдвое больше ожидаемого — дело в нём. Что делать: покажите агенту факт («за 4 минуты упало на 8, ожидал на 4») — это точнее, чем просьба «почини таймеры».</li>
+<li><strong>Спад без «офлайна».</strong> Закрыли вкладку на 10 минут — при открытии ничего не изменилось: значения тикают, только пока страница открыта. Почему: это самый простой способ написать таймер — и модель выберет его, если не требовать обратного. Что делать: пункт 3 промпта + ваша проверка с закрытой вкладкой (или через отметку времени в Local Storage).</li>
+<li><strong>«Залипшая» эмоция.</strong> Шкалы меняются, эмодзи — нет. Почему: эмоцию легко вычислить один раз при загрузке и не пересчитывать при изменениях. Что делать: занизьте сытость до 15 в хранилище, затем откормите до 85 и попросите точечную правку.</li>
+<li><strong>Спад пропал совсем.</strong> После «починки» двойного таймера значения не меняются вовсе. Почему: агент убрал таймер, а не его дубликат, или очистка срабатывает сразу после запуска. Что делать: тот же факт агенту — «за 4 минуты не упало ни на сколько».</li>
+<li><strong>После перезагрузки шкалы упали слишком сильно.</strong> Открыли приложение — значения рухнули на десятки. Почему: в сохранённых данных была старая отметка времени (или её не было вовсе), и агент посчитал спад за всё это время. Что делать: очистите хранилище (Clear) и проверьте сценарий заново на чистых данных; если повторяется — покажите агенту, что отметка не обновляется при сохранении.</li>
+</ol>
+</div>
+</section>
+<section class="panel panel--check" id="kak-proverit-rezultat" data-section="check">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">✓</span>
+        <h2 class="panel__title">Как проверить результат</h2>
+        <a class="panel__anchor" href="#kak-proverit-rezultat" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><ul>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="2-3.1ju7fk9"><span class="check__box" aria-hidden="true"></span><span class="check__text">Перед проверками хранилище очищено (Clear); после очистки приложение открывается в стартовых значениях, без <code>NaN</code> и <code>undefined</code>.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="2-3.1ek23pd"><span class="check__box" aria-hidden="true"></span><span class="check__text">Сытость и настроение не выходят за границы 0–100 — проверено с двух сторон.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="2-3.cf68g2"><span class="check__box" aria-hidden="true"></span><span class="check__text">За 3–4 минуты с открытой вкладкой падение ≈1 в минуту (не быстрее).</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="2-3.110iwz3"><span class="check__box" aria-hidden="true"></span><span class="check__text">Пауза с закрытой вкладкой засчитана: при открытии значения уменьшились примерно на число прошедших минут.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="2-3.qchuoj"><span class="check__box" aria-hidden="true"></span><span class="check__text">😿 появляется при любой шкале ниже 20, 😸 — при обеих выше 80, 🙂 — в остальных случаях; проверено кликами через пороги туда-обратно.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="2-3.1vphdx7"><span class="check__box" aria-hidden="true"></span><span class="check__text">В консоли браузера нет ошибок; в diff нет лишнего кода.</span></label></li>
+<li class="check"><label class="check__row"><input class="check__input" type="checkbox" data-check-id="2-3.1hawmu6"><span class="check__box" aria-hidden="true"></span><span class="check__text">Есть git-коммит рабочей версии.</span></label></li>
+</ul>
+</div>
+</section>
+<section class="panel panel--practice" id="praktika" data-section="practice">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">&#9998;</span>
+        <h2 class="panel__title">Практика</h2>
+        <a class="panel__anchor" href="#praktika" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><p>Добавьте правило «сытый не грустит»: настроение не уменьшается, пока сытость выше 50. Сначала сформулируйте проверку (как вы увидите разницу за пару минут?), затем — точечная правка тем же промптом, затем проверка руками. Задание без готового решения.</p>
+<p>Самопроверка: занизьте сытость до 30 (в хранилище, затем перезагрузите) — спад настроения возобновился; поднимите выше 50 — спад настроения остановился.</p>
+<p>Чтобы увидеть разницу за пару минут, спад обычно приходится ускорить: попросите агента временно заменить интервал на 5 секунд. Это нормальный приём — но <strong>верните обычный спад сразу после проверки</strong> и убедитесь, что снова −1 в минуту: ускоренный спад, забытый в проекте, сломает проверки в модулях 4–5.</p>
+</div>
+</section>
+<section class="panel panel--summary" id="glavnoe" data-section="summary">
+  <div class="panel__head">
+        <span class="panel__badge" aria-hidden="true">★</span>
+        <h2 class="panel__title">Главное</h2>
+        <a class="panel__anchor" href="#glavnoe" aria-label="Ссылка на раздел">#</a>
+      </div>
+  <div class="panel__body"><ol>
+<li>Живое приложение меняется без пользователя — именно это отличает питомца от счётчика кликов.</li>
+<li>Таймер — первый код, который работает сам; его баги выглядят как «правильно, но с другой скоростью».</li>
+<li>Честный спад считают по реально прошедшему времени: пока вкладка открыта — по таймеру, после паузы — по отметке времени. Иначе спад «тикает, только пока открыто».</li>
+<li>Эмоция — это функция от показателей: скоро такие функции вы будете проверять тестами (модуль 4).</li>
+<li>Одна правка за раз: пока не проверили спад — не трогайте эмоции.</li>
+<li>Двойной спад, пропавший «офлайн» и залипшая эмоция — типовые баги этого урока; теперь вы знаете, как их ловить.</li>
+</ol>
+</div>
+</section>
+  </div>
+
+  <nav class="pager" aria-label="Навигация по урокам">
+    <a class="pager__cell" href="2-2.html">
+      <span class="pager__dir">← Предыдущий урок</span>
+      <span class="pager__title"><b>2.2</b> Данные и сохранение</span>
+    </a>
+    <a class="pager__cell pager__cell--next" href="3-1.html">
+      <span class="pager__dir">Следующий урок →</span>
+      <span class="pager__title"><b>3.1</b> Читаем ошибки</span>
+    </a>
+  </nav>
+</article>
+</main>
+</div>
+<footer class="statusbar">
+  <p class="statusbar__cell statusbar__cell--hide-sm">14 уроков · 5 модулей</p>
+  <p class="statusbar__cell statusbar__cell--grow" data-status role="status">Готово</p>
+  <p class="statusbar__cell">Пройдено: <b data-progress-total>0 из 14</b></p>
+  <p class="statusbar__cell statusbar__cell--hide-sm" data-clock>--:--</p>
+</footer>
+<script type="application/json" id="course-data">{"version":1,"total":14,"start":"1-1","lessons":[{"slug":"1-1","code":"1.1","short":"Идея → ТЗ","module":1,"checks":5},{"slug":"1-2","code":"1.2","short":"ТЗ → план задач","module":1,"checks":6},{"slug":"1-3","code":"1.3","short":"Настройка проекта","module":1,"checks":8},{"slug":"2-1","code":"2.1","short":"Первый экран","module":2,"checks":6},{"slug":"2-2","code":"2.2","short":"Данные и сохранение","module":2,"checks":6},{"slug":"2-3","code":"2.3","short":"Время и эмоции","module":2,"checks":7},{"slug":"3-1","code":"3.1","short":"Читаем ошибки","module":3,"checks":5},{"slug":"3-2","code":"3.2","short":"Изоляция проблемы","module":3,"checks":5},{"slug":"3-3","code":"3.3","short":"Объяснение кода","module":3,"checks":5},{"slug":"4-1","code":"4.1","short":"Тесты","module":4,"checks":5},{"slug":"4-2","code":"4.2","short":"Правки без страха","module":4,"checks":5},{"slug":"5-1","code":"5.1","short":"Полировка","module":5,"checks":6},{"slug":"5-2","code":"5.2","short":"Деплой","module":5,"checks":7},{"slug":"5-3","code":"5.3","short":"Шпаргалка","module":5,"checks":5}]}</script>
+<script src="assets/app.js?v=2026-09-24" defer></script>
+</body>
+</html>
